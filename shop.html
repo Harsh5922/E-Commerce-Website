@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Healthyfy</title>
+	<link rel="stylesheet" type="text/css" href="shop.css">
+	<script>
+		function showIt() {
+			document.getElementById("hid").style.visibility = "visible";
+		}
+		setTimeout("showIt()", 3000); // after 3 seconds</script>
+
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="./1222.html"><img src="./logo.png" alt="Healthyfy">
+			</a>
+		</div>
+
+		<form class="search-form" action="/" method="get">
+			<input type="text" name="search" placeholder="Search...">
+			<button><img src="./search-removebg-preview.png" alt="Search"></button>
+		</form>
+		<nav>
+			<ul>
+				<li><a href="1222.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="hospital-main.html">Hospital</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="cart">
+			<a href="./cart.html"><img src="./cart.png" alt="Cart Logo">
+			</a>
+		</div>
+		<div class="profile">
+			<a href="./cart.html"><img src="./profile.png" alt="Profile Logo">
+			</a>
+		</div>
+		<div class="popup-box" id="hid" style="display: block; visibility: hidden">
+			<div class="transparent-layer"></div>
+			<div class="popup-inner">
+
+				<div class="popup-msg">
+					<div class="form-popup" id="myForm">
+						<form action="/action_page.php" class="form-container">
+							<h1>Recommand</h1>
+							<p>Skin</p>
+							<input type="radio" id="html" name="fav_language" value="HTML">
+							<label for="html">Dry</label><br>
+							<input type="radio" id="css" name="fav_language" value="CSS">
+							<label for="css">Oily</label><br>
+							<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+							<label for="javascript">Sensitive</label>
+
+							<br>
+
+							<p>Please select your age:</p>
+							<input type="radio" id="age1" name="age" value="30">
+							<label for="age1">0 - 30</label><br>
+							<input type="radio" id="age2" name="age" value="60">
+							<label for="age2">31 - 60</label><br>
+							<input type="radio" id="age3" name="age" value="100">
+							<label for="age3">61 - 100</label><br><br>
+							
+							<br>
+							<p>Weight</p>
+							<input type="radio" id="age1" name="age" value="30">
+							<label for="age1">0 - 30</label><br>
+							<input type="radio" id="age2" name="age" value="60">
+							<label for="age2">31 - 60</label><br>
+							<input type="radio" id="age3" name="age" value="100">
+							<label for="age3">61 - 100</label><br>
+							<input type="radio" id="age3" name="age" value="100">
+							<label for="age3"> >100</label><br><br>
+					
+							<input type="submit" value="Submit">
+							<button type="submit" class="btn">Login</button>
+							<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+						</form>
+					</div>
+				</div>
+
+				<button class="next-step-btn"><a href="shop.html">Submit</a></button>
+			</div>
+
+		</div>
+	</header>
+	<section class="banner">
+		<h1>All Products</h1>
+		<h4>Health product at ❤️ one place</h4>
+	</section>
+	<style>
+		body {
+			font-family: "Lato", sans-serif;
+		}
+
+		.sidenav {
+			width: 160px;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #F5C6EC;
+			overflow-x: hidden;
+			padding-top: 10px;
+			float: left;
+			text-align: justify;
+			padding-left: 50px;
+			padding-bottom: 339.5%;
+
+		}
+
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #818181;
+			display: block;
+		}
+
+		.sidenav a:hover {
+			color: #E11299;
+		}
+
+		.main {
+			margin-left: 160px;
+			/* Same as the width of the sidenav */
+			font-size: 28px;
+			/* Increased text to enable scrolling */
+			padding: 0px 10px;
+		}
+
+		@media screen and (max-height: 450px) {
+			.sidenav {
+				padding-top: 15px;
+			}
+
+			.sidenav a {
+				font-size: 18px;
+			}
+		}
+	</style>
+	</head>
+
+	<body>
+
+		<div class="sidenav">
+			<h1>Products</h1>
+			<a href="./SkinCare.html">Skin Care</a>
+			<a href="./Fitness.html">Fitness</a>
+			<a href="./Nutrition.html">Nutrition</a>
+			<a href="./WomensWellness.html">Women Wellness</a>
+		</div>
+
+		<div class="main">
+			<div class="container">
+				<div class="item-image">
+					<img src="./fitness/bag.jpg" alt="Item Image">
+					<h4>Sfane Duffle Bag</h4>
+					<p>polyester 23 cms COMPTT_grey</p>
+					<h4>₹386.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./Women/horlicks.jpg" alt="Item Image">
+					<h4>Women's Horlicks</h4>
+					<p>Bone Strength And You</p>
+					<h4>₹282.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./Nutrition/BCAA Energy.jpg" alt="Item Image">
+					<h4>BCAA ENERGY</h4>
+					<p>Advanced Workout with Micronized</p>
+					<h4>₹899.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+			<div class="container">
+				<div class="item-image">
+					<img src="./skin/BODY CARE.jpg" alt="Item Image">
+					<h4>Oil Infused Lotion</h4>
+					<p>BODY CARE</p>
+					<h4>₹655.82</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./Women/nuterlla.jpg" alt="Item Image">
+					<h4>Women's Nutrela</h4>
+					<p>Protein Supplement</p>
+					<h4>₹249.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./fitness/bottle.jpg" alt="Item Image">
+					<h4>Boldfit Gym Shaker</h4>
+					<p>Gym Bottle - 700 Ml</p>
+					<h4>₹229.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+			<div class="container">
+				<div class="item-image">
+					<img src="./fitness/yoga.jpg" alt="Item Image">
+					<h4>Gaiam Yoga Mat</h4>
+					<p>Exercise Mat with Easy-Cinch Yoga</p>
+					<h4>₹289.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./Women/book 2.jpg" alt="Item Image">
+					<h4>Ultimate Women</h4>
+					<p>Don't Hold Back Your Health</p>
+					<h4>₹379.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./fitness/dumbbells.jpg" alt="Item Image">
+					<h4>StarX Dumbbells</h4>
+					<p>10Kg PVC Dumbbells Set</p>
+					<h4>₹799.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+			<div class="container">
+				<div class="item-image">
+					<img src="./Women/boldfit.jpg" alt="Item Image">
+					<h4>Boldfit Flaxseed Oil</h4>
+					<p>Multivitamin Tablets For Women</p>
+					<h4>₹598.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./skin/BODY WAS 2.jpg" alt="Item Image">
+					<h4>Active Body Wash</h4>
+					<p>BODY WASH</p>
+					<h4>₹450.62</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./fitness/hand grip.jpg" alt="Item Image">
+					<h4>Strauss Hand Grip</h4>
+					<p>HandGrip With Smart Counter</p>
+					<h4>₹229.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+			<div class="container">
+				<div class="item-image">
+					<img src="./fitness/kit.jpg" alt="Item Image">
+					<h4>Vifitkit matt with bag</h4>
+					<p>Outdoor Workout</p>
+					<h4>₹399.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./skin/BODY WASH.jpg" alt="Item Image">
+					<h4>Shea Butter</h4>
+					<p>BODY WASH</p>
+					<h4>₹342.73</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./Women/book 3.jpg" alt="Item Image">
+					<h4>Ayurveda for Women</h4>
+					<p>the Power of Food Medicine</p>
+					<h4>₹629.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+
+			<div class="container">
+				<div class="item-image">
+					<img src="./skin/CREME.jpg" alt="Item Image">
+					<h4>Niva Cream</h4>
+					<p>MENS CARE</p>
+					<h4>₹287.26</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./Women/book-1.jpg" alt="Item Image">
+					<h4>Women Health Book</h4>
+					<p>A Guide for the Irish Women</p>
+					<h4>₹495.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./Women/book 4.jpg" alt="Item Image">
+					<h4>Wellness and Health</h4>
+					<p>A Guide to Creating Wellness Stage</p>
+					<h4>₹449.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+
+			<div class="container">
+				<div class="item-image">
+					<img src="./fitness/rope.jpg" alt="Item Image">
+					<h4>Jump Rope</h4>
+					<p>Polypropylene Standard Jump</p>
+					<h4>₹309.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./fitness/wrist band.jpg" alt="Item Image">
+					<h4>Bold Wrist Supporter</h4>
+					<p>Wrist Band with Thumb Loop</p>
+					<h4>₹197.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./Women/centruem.jpg" alt="Item Image">
+					<h4>Centrum Women</h4>
+					<p>World's No.1 Multivitamin</p>
+					<h4>₹470.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+			<div class="container">
+				<div class="item-image">
+					<img src="./skin/honey-malai-body-wash (1).jpg" alt="Item Image">
+					<h4>Honey Body Wash</h4>
+					<p>Honey & Malai for Nourishing Glow</p>
+					<h4>₹349.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./Nutrition/true gain.jpg" alt="Item Image">
+					<h4>TRUE GAIN</h4>
+					<p>Reduces Muscle Breakdown</p>
+					<h4>z₹749.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./skin/skin-main.jpg" alt="Item Image">
+					<h4>Product Name</h4>
+					<p>Description of the product goes here</p>
+					<h4>$99.99</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+			<div class="container">
+				<div class="item-image">
+					<img src="./Nutrition/real mass gainer.jpg" alt="Item Image">
+					<h4>REAL MASS GAINER</h4>
+					<p>Reduces Muscle Breakdown</p>
+					<h4>₹729.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./skin/tea_tree_shampoo.jpg" alt="Item Image">
+					<h4>Tea Tree Shampoo</h4>
+					<p>For Dandruff Free Hair</p>
+					<h4>₹380.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./skin/ubtan-face-wash.jpg" alt="Item Image">
+					<h4>Ubtan Face Wash</h4>
+					<p>With Termaric & Saffron</p>
+					<h4>₹259.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+			<div class="container">
+				<div class="item-image">
+					<img src="./Nutrition/Frotein.jpg" alt="Item Image">
+					<h4>FROTEIN</h4>
+					<p>Revolutionary Frotein</p>
+					<h4>₹899.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./Nutrition/performance whey.jpg" alt="Item Image">
+					<h4>PERFORMANCE</h4>
+					<p>Bigmuscles Nutrition Performance</p>
+					<h4>₹1,599.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./skin/vitamin_c_foaming_face_wash.jpg" alt="Item Image">
+					<h4>Vitamin-C Facewash</h4>
+					<p>With Vitamin-C & Turmeric</p>
+					<h4>₹399.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+			</div>
+			<div class="container">
+				<div class="item-image">
+					<img src="./Nutrition/Gold whey.jpg" alt="Item Image">
+					<h4>GOLD WHEY PROT.</h4>
+					<p>Isolate Whey Protein Blend</p>
+					<h4>₹1,699.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+				<div class="item-image">
+					<img src="./Nutrition/EssentialWhey.jpg" alt="Item Image">
+					<h4>ESSENTIAL WHEY</h4>
+					<p>Faster Recovery & Muscle Building</p>
+					<h4>₹975.00</h4>
+
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+				<div class="item-image">
+					<img src="./Nutrition/Carnitine Powder.jpg" alt="Item Image">
+					<h4>CARNITINE POWDER</h4>
+					<p>Energy, Performance & Recovery</p>
+					<h4>₹719.00</h4>
+
+
+					<input class="add-to-cart" type="button" value="Add to Cart">
+				</div>
+
+
+
+	</body>
+
+</html>
